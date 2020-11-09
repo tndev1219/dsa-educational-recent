@@ -1,0 +1,36 @@
+body {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 400;
+    color: $primary-black;
+    min-height: 75rem;
+    padding-top: 4.5rem;
+    background-color: $white;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $NOTO_SERIF, serif;
+    font-weight: 700;
+    color: $primary-black;
+}
+
+h4 {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 700;
+    font-size: 42px;
+    color: $primary-black;
+}
+
+p {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 400;
+    color: $primary-black;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    color: $primary-black!important;
+}

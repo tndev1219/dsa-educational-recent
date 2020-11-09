@@ -1,0 +1,243 @@
+//HERO STYLES GO HERE 
+.hero--bg {
+    //background-image: url('../img/000/homepage_hero@2x.png');
+    background-size: 1440px 609px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    @media(min-width: 1500px) {
+        background-size: cover;
+    }
+    @media(max-width: 576px) {
+        background-image: url('../img/000/hero_mobile@2x.png');
+        background-size: cover;
+    }
+}
+
+.hero--bg-hcp-home {
+    background-image: url('../img/hcphome/hero_HCP_Home_LG@2x.png');
+    background-size: 1440px 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    @media(min-width: 1500px) {
+        background-size: cover;
+    }
+    @media(max-width: 576px) {
+        background-image: url('../img/hcphome/hero_mobile@2x.png');
+        background-size: cover;
+    }
+}
+
+.video-fullscreen-bg {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.home--hero {
+    z-index: 1;
+
+    &-rotate {
+        background-image: url('../img/000/home-hero-frame.svg');
+        background-size: 365px 136px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 136px;
+        width: 365px;
+
+        position: relative;
+
+        &-eyebrow {
+            color: $white;
+            font-family: $NOTO_SANS_SC;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .scene {
+            color: $white;
+            font-size: 64px;
+            margin: auto;
+            position: absolute;
+            top: 3.5rem; left: 0; bottom: 0; right: 0;
+            height: 136px;
+            width: 365px;
+            opacity: 0;
+
+            animation-name: fader;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+
+            &-1 {
+                //opacity: 1;
+                animation-delay: 0s;
+            }
+            &-2 {
+                animation-delay: 6.66s;
+            }
+            &-3 {             
+                animation-delay: 13.33s;
+            }
+
+            @keyframes fader {
+                0% {opacity: 0;}
+                15% {opacity: 1;}
+                37% {opacity: 0;}
+                100% {opacity: 0;}
+            }
+        }
+    }
+
+    &-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: -100;
+    }
+}
+
+.hero--bg-diet {
+    background-image: url('../img/diet/hero_diet_LG@2x.png');
+    background-size: 1440px 570px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 570px;
+    @media(min-width: 1500px) {
+        background-size: cover;
+    }
+    @media(max-width: 576px) {
+        background-image: url('../img/diet/hero_diet_LG_mobile@2x.png');
+        background-size: cover;
+    }
+}
+
+.hero--bg-resources {
+    background-image: url('../img/resources/hero_resources.png');
+    background-size: 1500px 638px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 75vh;
+    @media(min-width: 1500px) {
+        background-size: cover;
+    }
+    @media(max-width: 576px) {
+        background-image: url('../img/resources/hero_resources.png');
+        background-size: cover;
+    }
+}
+
+.hero--bg-science {
+    background-image: url('../img/science/hero_science.png');
+    background-size: 1440px 570px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 570px;
+    @media(min-width: 1500px) {
+        background-position: 0 -100px;
+        background-size: cover;
+    }
+    @media(max-width: 576px) {
+        background-image: url('../img/science/hero_science.png');
+        background-size: cover;
+    }
+}
+
+.hero--bg-newborns {
+    background-image: url('../img/newborns/newborns_hero.png');
+    background-size: 1440px 424px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 45vh;
+    @media(min-width: 1500px) {
+        background-position: 0 -100px;
+        background-size: cover;
+    }
+    @media(max-width: 576px) {
+        background-image: url('../img/newborns/newborns_hero.png');
+    }
+}
+
+.hero--bg-disease {
+    background-image: url('../img/disease_symptoms/hero_HCP_Symptoms_LG.png');
+    background-size: 1440px 514px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 75vh;
+    @media(min-width: 1500px) {
+        // background-position: 0 -100px;
+        background-size: cover;
+    }
+    @media(max-width: 576px) {
+        background-image: url('../img/science/AT_Hero_Diet_SM@2x.png');
+        background-size: cover;
+    }
+}
+
+.hero-disease-header-content {
+    padding-top: 15vh;
+    margin-left: 16vw;
+    width: 600px;
+}
+
+.hero-resources-header-content {
+    padding-top: 15vh;
+    margin-left: 16vw;
+    width: 600px;
+}
+
+.hero-science-header-content {
+    padding-top: 15vh;
+    margin-left: 16vw;
+    width: 500px;
+}
+
+.hero-newborns-header-content {
+    padding-top: 15vh;
+    margin-left: 16vw;
+    width: 500px;
+}
+
+.hero--content--text {
+    font-family: $NOTO_SANS_SC, sans-serif;
+    font-weight: 500;
+    color: $white;
+    // padding-left: 15rem;
+    // padding-right: 15rem;
+    // @media(max-width: 576px) {
+    //     padding-left: 3rem;
+    //     padding-right: 3rem;
+    // }
+    // @media (max-width: 768px) {
+    //     padding-left: 12rem;
+    //     padding-right: 12rem;
+    // }
+    @media (min-width: 1300px) {
+        padding-left: 25rem;
+        padding-right: 25rem;
+    }
+    @media (min-width: 1400px) {
+        padding-left: 25rem;
+        padding-right: 25rem;
+    }
+}
+
+.hero-content--btn {
+    @include makeOutlineButton($bg-color: $primary-green, $border-color: $primary-green, $text-color: $white, $font-size: 16px, $font-weight: 500, $padding-sizes: 10px 30px 10px 30px);
+    background-image: url("../img/000/anchor-link-down.svg");
+    background-repeat: no-repeat;
+    padding-right: calc(1.5em + 0.75rem);
+    background-position: center right calc(0.75em + 0.25rem);
+    transition: 1s;
+
+    &:hover {
+        background-image: url("../img/000/anchor-link-down-green.svg");
+        transition: 1s;
+    }
+}

@@ -1,0 +1,187 @@
+<nav id="navbar" class="navbar navbar-expand-md navbar-expand-lg navbar-dark fixed-top p-0 d-flex flex-column">
+    <div class="navbar--eyebrow bg--secondary-light-gray w-100">
+        <div class="container">
+            <div class="d-flex justify-content-end col-12 px-0">
+                <a class="paragraph-text--medium-condensed-16 text-color--primary-green pr-2 color--primary-green-link active" href="index.html">For Patients & Caregivers</a>
+                <p class="paragraph-text--medium-condensed-16 px-2">|</p>
+                <a class="paragraph-text--medium-condensed-16 px-2" href="hcp-home.html">For Healthcare Professionals</a>
+            </div>
+        </div>
+    </div>
+    <div class="navbar--container bg--white w-100">
+        <div class="container">
+            <div class="collapse navbar-collapse w-100 px-0 col-12 d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <div id="logo-btn" class="navbar--no-tabs mr-4 ml-0">
+                        <a class="navbar-brand" href="index.html"><img src="./assets/img/global/light-at-logo.svg" width="158" /></a>
+                    </div>
+                    <ul id="navbar--menu-container" class="navbar-nav">
+                        <li class="nav-item mx-1 text-nowrap"><a id="navbar--life-stages-btn" class="nav-link" href="#">Life Stages <span class="icon-dropdown-icon"></span></a>
+                            <div id="life-stages-tab" class="tab-content" style="display:none;z-index:-1;cursor:pointer;">
+                                <div id="life-stages-btn-link" class="container tab-pane active">
+                                    <ul class="life-stages-tab--nav-list list-unstyled">
+                                        <li><a href="#" class="nav-link life-stages-tab--nav-link">Newborns</a></li>
+                                        <li><a href="#" class="nav-link">Infants & Toddlers</a></li>
+                                        <li><a href="#" class="nav-link">Primary School</a></li>
+                                        <li><a href="#" class="nav-link">Teens</a></li>
+                                        <li><a href="#" class="nav-link">Adults</a></li>
+                                    </ul>
+                                </div>
+                                <div id="dropdown-bg" class="dropdown-tab" style="position:absolute; top:-59px; left:-3px; z-index:-1;"><img src="./assets/img/global/dropdown-bg@2x.png" width="215" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-1"><a id="navbar--diet-btn" class="nav-link navbar-desktop-layout--link" href="diet.html">Diet</a></li>
+                        <li class="nav-item mx-1"><a id="navbar--science-btn" class="nav-link navbar--no-tabs navbar-desktop-layout--link" href="science.html">Science</a></li>
+                        <li class="nav-item mx-1"> <a id="navbar--resources-btn" class="nav-link navbar--no-tabs navbar-desktop-layout--link" href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-end">
+                    <div class="btn-nav--search" style="z-index:5;">
+                        <div class="search-input--container" style="display: none;">
+                            <div class="search-input--textbox d-flex">
+                                <input label="search" id="search-input-text" type="text" placeholder="Search">
+                                <button class="search-input--search-btn">Search</button>
+                            </div>
+                        </div>
+                        <img class="navbar-header--search-icon" src="./assets/img/global/search-icon.svg" width="48" />
+                        <img class="navbar-header--search-close-icon" style="display:none;" src="./assets/img/global/button_close_desktop_search_btn.svg" width="48" />
+                    </div>
+                    <div class="my-md-0">
+                        <div class="d-inline-flex">
+                            <button class="navbar-desktop--signup-btn">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hide--mobile-header bg--white fixed-top pb-2">
+                    <div  style="background:white; height:80px;">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6 bg--white">
+                                        <div class="pt-4 mt-1 ml-1 pl-2">
+                                            <a href="https://appliedtherapeutics.com/" target="_blank"> <img src="./assets/img/global/light-at-logo.svg" width="156" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 bg--white">
+                                        <div class="pt-3">
+                                            <div class="d-inline-flex">
+                                                <div class="mobile-header--search-btn mr-2">
+                                                    <img src="./assets/img/global/search-mobile-icon.svg" width="40" />
+                                                </div>
+                                                <div class="ml-4">
+                                                    <button class="mobile-header--menu-btn">
+                                                        <span class="icon-close-mobile-icon mobile-header--close-icon text-color--primary-green" style="font-size: 24px; display:none;"></span>
+                                                        <span class="icon-hamburger-icons mobile-header--hamburger--icon text-color--primary-green" style="font-size: 24px;"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- search container starts -->
+                                    <div class="col-12 mobile-header--search-overlay bg--white fixed-top" style="display: none;">
+                                        <div class="mt-3">
+                                            <div class="mobile-header--search-container">
+                                                <div class="d-flex">
+                                                    <div class="mobile-header--search-icon-input">
+                                                        <span class="icon-search-mobile-icon  text-color--primary-green"></span>
+                                                    </div>
+                                                    <input class="mobile-header--input" type="text" placeholder="Search this site..." />
+                                                    <div class="mobile-header--search-close-btn">
+                                                        <span class="icon-close-mobile-icon  text-color--white"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- search container ends -->
+                                    <!-- menu  starts-->
+                                    <div class="container-fluid overflow-hidden" style="height:80%;">
+                                        <!-- menu container starts-->
+                                        <div class="w-100 mobile-header--menu-nav-container">
+                                            <!-- menu toggle starts -->
+                                            <div class="row mobile-header--toggle-btn-container no-gutters w-100 bg--white">
+                                                <div id="mobile-header--caregivers-toggle" class="col-6 mx-auto mobile-header--btn-border-caregiver">
+                                                    <div class="text-center">
+                                                        <p id="mobile-header--caregivers-toggle-txt" class="paragraph-text--medium-condensed-16"> Caregivers<br>& Patients</p>
+                                                    </div>
+
+                                                </div>
+                                                <div id="mobile-header--hcp-toggle" class="col-6 mx-auto mobile-header--btn-border-hcp">
+                                                    <div class="text-center">
+                                                        <p id="mobile-header--hcp-toggle-txt"  class="paragraph-text--medium-condensed-16">Healthcare<br>
+                                                            Professionals</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- menu toggle ends -->
+                                            <div id="mobile-header--menu-container" class="row mobile-header--menu-container  no-gutters w-100 bg--secondary-light-gray">
+                                                <!-- Caregivers and patients starts -->
+                                                <div id="mobile-header--caregivers-and-patients-menu">
+
+                                                    <!-- life stages starts -->
+
+                                                    <div>
+                                                        <!-- <p> class="paragraph-text--medium-condensed-16">Life Stages</p> -->
+                                                        <ul class="list-unstyled pl-3" style="margin-bottom: 60vh; margin-top:2vh;">
+                                                            <li><p id="mobile-header--life-stages-btn" class="paragraph-text--medium-condensed-16 mobile--header-tab-off mobile--header-tab-on  mb-0 py-2">Life Stages <span class="icon-dropdown-icon"></span></p>
+                                                                <ul id="mobile-header--life-stages-dropdown" class="list-unstyled pl-3" style="display: none;">
+                                                                    <li class="py-2"><a class="paragraph-text--medium-condensed-16" href="newborns.html">Newborns</a></li>
+                                                                    <li class="py-2"><a class="paragraph-text--medium-condensed-16" href="infants-and-toddlers.html">Infants & Toddlers</a></li>
+                                                                    <li class="py-2"><a class="paragraph-text--medium-condensed-16" href="primary-school.html">Primary School</a></li>
+                                                                    <li class="py-2"><a class="paragraph-text--medium-condensed-16" href="teens.html">Teens</a></li>
+                                                                    <li class="py-2"><a class="paragraph-text--medium-condensed-16" href="adults.html">Adults</a></li>
+                                                                </ul>
+
+                                                            </li>
+                                                            <li class="py-2">
+                                                                <a class="paragraph-text--medium-condensed-16" href="science.html">Science</a>
+                                                            </li>
+                                                            <li class="py-2"><a class="paragraph-text--medium-condensed-16" href="diet.html">Diet</a></li>
+                                                            <li class="py-2"><a class="paragraph-text--medium-condensed-16" href="resources.html">Resources</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- life stages ends -->
+
+
+
+                                                </div>
+                                                <!-- Caregivers and patients ends -->
+                                                <!-- Healthcare Profesional menu starts -->
+                                                <div id="mobile-header--hcp-menu" style="display:none;">
+                                                    <ul id="mobile-header--hcp-nav" class="list-unstyled pl-3" style="margin-top: 2vh;
+                                               margin-bottom: 70vh;">
+                                                        <li class="py-3"><a class="paragraph-text--medium-condensed-16 text-color--white" href="hcp-home.html">Galactosemia for HCPs</a></li>
+                                                        <li class="py-3"><a class="paragraph-text--medium-condensed-16 text-color--white" href="moa.html">Mechanism of Disease</a></li>
+                                                        <li class="py-3"><a class="paragraph-text--medium-condensed-16 text-color--white" href="disease-symptoms-and-surveillance.html">Disease Surveillance & Monitoring</a></li>
+                                                        <li class="py-3"><a class="paragraph-text--medium-condensed-16 text-color--white" href="disease-symptoms-and-surveillance.html">Clinical Guidelines</a></li>
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <!-- Healthcare Profesional menu ends -->
+                                                </div>
+                                                <div class="text-center pl-2" style="position: absolute; top: 500px;">
+                                                    <button id="mobile-header--join-us-btn" class="mobile-header--join-us-btn">
+                                                        Join us
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- menu container ends-->
+
+
+                                        </div>
+
+
+                                        <!-- menu ends -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

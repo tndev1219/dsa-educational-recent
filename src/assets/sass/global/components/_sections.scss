@@ -1,0 +1,675 @@
+.section {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    color: $primary-black;
+    
+    @media(max-width: $bootstrap-medium-devices) {
+        padding: 0;
+    }
+}
+
+.life-stages {
+    &-container {
+        @media(max-width: $bootstrap-xl-devices) {
+            flex-wrap: wrap;
+        }
+        list-style-type: none;
+        padding-left: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+
+        &--text-container {
+            width: 172px;
+
+            @media(max-width: $bootstrap-lg-devices) {
+                padding-left: 1rem;
+                margin-right: .75rem;
+            }
+            @media(max-width: $bootstrap-medium-devices) {
+                width: 191px;
+                padding-left: 0;
+
+                p.header-text--light {
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+
+
+    &--btn {
+        position: relative;
+
+        @media(max-width: $bootstrap-medium-devices) {
+            padding-bottom: 1rem;
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: grayscale(100%);
+            background-repeat: no-repeat;
+        }
+
+        &:hover::before {
+            filter: none;
+            transition: 1s;
+        }
+
+        a {
+            display: block;
+            height: 226px;
+            width: 161px;
+            position: relative;
+            text-decoration: none;
+
+            .toggle-pointer-img {
+                margin-right: .375rem;
+                @media(max-width: $bootstrap-lg-devices) {
+                    margin-right: .5rem;  
+                }
+                margin-bottom: .75rem;
+                transition: margin-right .5s;
+            }
+
+            &:hover {
+                .toggle-pointer-img {
+                    transition: margin-right .5s;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        p {
+            color: $white;
+            font-family: "Noto Sans SC";
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1rem;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            width: 85%;
+            max-width: 115px;
+        }
+
+        &-newborns::before {
+            background-image: url("../img/000/img_newborns.png");
+        }
+        &-toddlers::before {
+            background-image: url("../img/000/img_toddlers.png");
+        }
+        &-primary::before {
+            background-image: url("../img/000/img_primary.png");
+        }
+        &-teens::before {
+            background-image: url("../img/000/img_teens.png");
+        }
+        &-adults::before {
+            background-image: url("../img/000/img_adult.png");
+        }
+
+        @media(max-width: $bootstrap-medium-devices) {
+            margin-left: -13px;
+
+            a {
+                height: 104px;
+                width: 344px;
+                .toggle-pointer-img {
+                    margin-bottom: 2.5rem;
+                }
+            }
+
+            p {
+                max-width: 285px;
+                margin-bottom: 2.75rem;
+                margin-left: 1rem;
+            }
+
+            &-newborns::before {
+                background-image: url("../img/000/newborns-mobile-btn@2x.png");
+            }
+            &-toddlers::before {
+                background-image: url("../img/000/toddler-mobile-btn@2x.png");
+            }
+            &-primary::before {
+                background-image: url("../img/000/primary-mobile-btn@2x.png");
+            }
+            &-teens::before {
+                background-image: url("../img/000/teen-mobile-btn@2x.png");
+            }
+            &-adults::before {
+                background-image: url("../img/000/adult-mobile-btn@2x.png");
+            }
+        }
+    }
+}
+
+//METABOLIC SECTION HEADER 
+.metabolic-section-header {
+    width: 30vw;
+    @media(max-width: 576px) {
+        width: 80vw;
+    }
+}
+
+.metabolic-mobile-chart-image {
+    margin-left: -1rem;
+    @media(min-width: 400px) {
+        margin-left: 2rem;
+    }
+}
+
+.metabolic-chart--btn {
+    .metabolic-chart--text {
+        font-family: $NOTO_SANS, sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: rgba(35, 35, 35, .4);
+    }
+    .metabolic-chart--btn-highlight {
+        width: 190px;
+        height: 8px;
+        border: 1px solid $secondary-light-blue;
+        background-color: $secondary-light-blue;
+    }
+}
+
+.metabolic-chart--desktop-layout {
+    @media(max-width: $bootstrap-small-devices) {
+        display: none!important;
+    }
+}
+
+#metabolic-chart-step1 {
+    cursor: pointer;
+}
+
+.metabolic-chart--text-on {
+    color: $primary-green!important;
+}
+
+.metabolic-chart--btn-on {
+    border: 1px solid $primary-green!important;
+    background-color: $primary-green!important;
+}
+
+.metabolic-chart--btn-off {
+    border: 1px solid $secondary-light-blue;
+    background-color: $secondary-light-blue;
+}
+
+//HEALTHCARE PROFESSIONAL SECTION
+.healthcare--professional-section {
+    margin-left: -200px;
+    margin-top: -20vh;
+    // @media (max-width: 1200px) {
+    //     margin-left: -100px;
+    // }
+    @media (max-width: 576px) {
+        margin-left: 0!important;
+    }
+}
+
+.healthcare--professional-container {
+    padding-top: 10vh;
+    // margin-top: 5rem!important;
+    // @media (max-width: 1200px) {
+    //     margin-top: -8rem;
+    // }
+    // @media(max-width: 992px) {
+    //     // margin-top: 0rem!important;
+    //     // margin-left: 18rem;
+    //     // padding-top: 0px!important;
+    //     // padding-bottom: 0px !important;
+    // }
+}
+
+.healthcare--professional-btn-margin {
+    margin-top: -6rem;
+    // margin-left: 20vw;
+    // padding-left: 20vw;
+}
+
+.healthcare--professional-mobile-content {
+    margin-left: 9rem;
+    width: 200px;
+    @media(min-width: 400px) {
+        margin-left: 11rem;
+    }
+}
+
+//TOXIC GALACITOL AND GALACTOSEMIA SECTION 
+.toxic-galacitol--section {
+    padding-top: 15vh;
+    margin-left: -220px;
+    @media(max-width: 576px) {
+        margin-left: 0px;
+    }
+}
+
+.toxic-galacitol--left-column {
+    padding-left: 13rem;
+    @media(max-width: 576px) {
+        padding-left: 0;
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+    }
+    img {
+        // background: white;
+        @media(max-width: 576px) {
+            background: none;
+        }
+    }
+}
+
+.toxic-galacitol--right-column {
+    .toxic-galacitol--paragraph {
+        max-width: 540px;
+        @media(max-width: 576px) {
+            width: 300px;
+        }
+    }
+}
+
+.what-is--section-bg {
+    &::after {
+        background-image: url('../img/000/shape_1.svg');
+        background-size: auto;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        content: '';
+        display: inline-block;
+        position: absolute;
+        height: 610px;
+        width: 600px;
+        top: -110px;
+        left: 1300px;
+    }
+}
+
+//PATHWAYS SECTION 
+.pathways--section-bg {
+    img {
+        width: 765px;
+        @media(min-width: 400px) {
+            // width: 418px;
+            //margin-left: 60px;
+        }
+        @media(max-width: 576px) {
+            width: 418px!important;
+            margin-left: -10px!important;
+        }
+        @media(max-width: 992px) {
+            margin-left: -10px;
+            width: 600px;
+        }
+    }
+    @media(max-width: 576px) {
+        padding-top: 10vh;
+    }
+}
+
+.pathways--section-bg-margin {
+    margin-left: -300px;
+    @media(max-width: 992px) {
+        margin-left: 0;
+    }
+    @media(max-width: 376px) {
+        margin-left: -20px;
+    }
+    @media(max-width: 576px) {
+        margin-left: -120px;
+    }
+    @media(min-width: 1700px) {
+        margin-left: -290px;
+    }
+    @media(min-width: 2000px) {
+        margin-left: -410px;
+    }
+}
+
+.metabolic-section-bg {
+    position: relative;
+    // background-image: url('../img/000/metabolic-pathway-bg@2x.png');
+    // background-size: 903px auto;
+    // background-position: 870px 0px;
+    margin-top: -45vh;
+    @media(max-width: 576px) {
+        margin-top: -40vh;
+    }
+    z-index: -1;
+}
+
+.healthcare--professional-bg {
+    background-image: url('../img/000/healthcare-professional-bg@2x.png');
+    background-size: 1500px auto;
+    width: 1500px;
+    height: 40vh;
+    // @media (max-width: 1300px) {
+    //     background-size: 1200px auto;
+    //     width: 1200px;
+    //     height: 35vh;
+    // }
+    // @media(max-width: 992px) {
+    //     background-size: 900px auto;
+    //     height: 25vh;
+    // }
+    @media(max-width: 576px) {
+        display: none!important;
+    }
+}
+
+.healthcare--professional-mobile-bg {
+    background-image: url('../img/000/healthcare-professional-mobile-bg@2x.png');
+    background-size: 375px auto;
+    margin-left: -40px;
+    width: 375px;
+    height: 55vh;
+    @media(min-width: 400px) {
+        background-size: 480px auto;
+        width: 440px;
+        height: 67vh;
+        margin-left: -15px;
+    }
+}
+
+//TOXIC GALACITOL & GALACTOSEMIA SECTION 
+//TYPES OF GALACTOSEMIA SECTION
+.types-of-galactosemia-bg {
+    margin-left: 8rem;
+    @media(max-width: 576px) {
+        padding-top: 5vh;
+        margin-left: 2rem;
+    }
+}
+
+//JOIN THE COMMUNITY SECTION
+.join-community-bg {
+    background-image: url('../img/000/callout-signup-bg@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 40vh;
+    border-top: 1px solid $white;
+    @media(min-width: 992px) {
+        height: 30vh;
+    }
+    @media(min-width: 1300px) {
+        height: 37vh;
+    }
+    @media(max-width: 576px) {
+        background-image: url('../img/000/callout-signup-mobile-bg@2x.png');
+        background-size: cover;
+        height: 50vh;
+    }
+}
+
+.join-community-resources-bg {
+    background-image: url('../img/callouts/callout_caregiver@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 50vh;
+    // border-top: 1px solid $secondary-light-blue;
+    // @media(min-width: 992px) {
+    //     height: 30vh;
+    // }
+    // @media(min-width: 1300px) {
+    //     height: 50vh;
+    // }
+    @media(max-width: 576px) {
+        background-image: url('../img/resources/callout_caregiver_mobile@2x.png');
+        background-size: cover;
+        height: 50vh;
+    }
+}
+
+.join-community-position {
+    position: relative;
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+.join-community-header {
+    
+  font-family: $NOTO_SERIF;;
+    font-weight: 700;
+    font-size: 42px;
+    padding-left: 25vw;
+    @media(max-width: 576px) {
+        padding-left: 0;
+        margin-bottom: 2.5vh;
+    }
+}
+
+.join-community--btn {
+    width:190px; 
+    height:48px;
+}
+
+.join-community-header--hcp-diet-header {
+    font-size: 42px;
+    // max-width: 540px;
+    padding-left: 25vw;
+    margin-left: 4vw;
+}
+
+.join-community-header--hcp-home-header {
+    font-size: 42px;
+}
+
+.join-the-community-hcp-home--section-position {
+    position: absolute;
+    margin-top: 2rem;
+}
+
+.join-the-community-disease--section-container {
+    z-index: 1;
+    padding-top: 10rem;
+}
+
+.join-the-community-disease--section-position {
+    position: absolute;
+    margin-top: 7rem;
+}
+
+.join-community-text-container {
+    padding-top: 23vh;
+    @media(min-width: 992px) {
+        padding-top: 27vh;
+    }
+    @media(max-width: 576px) {
+        padding-top: 4vh;
+    }
+}
+
+//SHARE THIS PAGE SECTION
+.share-this-page-btn-margin {
+    @media(max-width: 576px) {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
+
+.callout-card-desktop-image {
+    @media(max-width: $bootstrap-xl-devices) {
+        display: none;
+    }
+}
+
+.callout-card--left-xl-width {
+    @media(min-width: 1400px) {
+        //margin-left: -10vw;
+        // margin-right: 3rem;
+        //width: 540px!important;
+        width: 80%;
+    }
+    // @media(min-width: 1400px) {
+    //     // margin-left: 20vw;
+    //     // margin-right: 3rem;
+    //     margin-left: 20vw;
+    //     width: 540px!important;
+    // }
+}
+
+.callout-card--right-xl-width {
+    @media(min-width: 1400px) {
+        // margin-left: 10vw;
+        // margin-right: 6rem;
+        // width: 540px!important;
+        width: 80%;
+    }
+}
+
+.callout-card--text-content {
+    width: 260px;
+    @media(max-width: $bootstrap-xl-devices) {
+        width: 100%;
+    }
+    @media(max-width: $bootstrap-lg-devices) {
+        width: 70%;
+    }
+    @media(max-width: $bootstrap-small-devices) {
+        width: 80%;
+    }
+}
+
+.callout-card--text-content-icon {
+    position: relative;
+    margin-top: 63px;
+    @media(max-width: $bootstrap-xl-devices) {
+        position: absolute;
+        /* left: 10%; */
+        /* margin-left: -100px; */
+        left: 45%;
+        top: 67%;
+    }
+    @media(max-width: $bootstrap-lg-devices) {
+        position: absolute;
+        left: 82%;
+        top: 64%;
+    }
+}
+
+.card-section--card-width {
+    max-width: 540px!important;
+}
+
+.card-section--padding {
+    @media(max-width: $bootstrap-small-devices) {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+.callout-card--mt-2 {
+    margin-top: 0;
+    @media(max-width: $bootstrap-small-devices) {
+        margin-top: 1rem;
+    }
+}
+
+.callout-card-mobile-image {
+    display: none;
+    @media(max-width: $bootstrap-xl-devices) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.callout-resources-desktop-image {
+    @media(max-width: $bootstrap-xl-devices) {
+        display: none;
+    }
+}
+
+.paragraph--container {
+    width: 377px;
+}
+
+.section-row-full-width {
+    // background-color: $primary-black;
+    position: relative;
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+.section-container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+
+//TOGGLE BUTTON STYLING 
+.toggle-btn--container {
+    //width: 355px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.toggle--hide-tab {
+    display: none!important;
+}
+
+.toggle--show-tab {
+    display: block!important;
+}
+
+.toggle--on-text {
+    color: $primary-green!important;
+}
+
+.toggle--off-text {
+    color: rgba($primary-gray, .4)!important;
+}
+
+.toggle--off-bg {
+    border: 2px solid rgba($primary-gray, .4)!important;
+}
+
+.toggle--on-bg {
+    border: 2px solid rgba($primary-gray, .4)!important;
+}
+
+.toggle-btn--highlight {
+    width: 100%;
+    //height: 4px;
+    // border-radius: 8px;
+    border: 2px solid $primary-green;
+    // background-color: $primary-green;
+    text-align: center;
+}
+
+.toggle-btn--text {
+    font-family: $NOTO_SANS;
+    font-weight: 700;
+    font-size: 24px;
+    color: $primary-green;
+}
+
+// SCIENCE SECTION 
+.science--paragraph-section-1 {
+    width: 536px;
+    padding-bottom: 6rem;
+}
+
+.disease--paragraph-section-1 {
+    // width: 536px;
+    padding-bottom: 6rem;
+}
+
+//DIET SECTION
+.diet--sit-down-together-image-bg {
+    position:relative; 
+    top:-250px;
+    z-index:-1; 
+    width:441px;
+    height:216px;
+}

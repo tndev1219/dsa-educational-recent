@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="YouTube" transform="translate(-157.475 -70)">
+    <g id="Rectangle_Copy_5" data-name="Rectangle Copy 5" transform="translate(157.475 70)" fill="none" stroke="#018650" stroke-miterlimit="10" stroke-width="2">
+      <rect width="62" height="62" rx="31" stroke="none"/>
+      <rect x="1" y="1" width="60" height="60" rx="30" fill="none"/>
+    </g>
+    <g id="Youtube_Color" data-name="Youtube/Color" transform="translate(173.314 91.653)">
+      <g id="Youtube_Color-2" data-name="Youtube/Color" transform="translate(0 0)">
+        <path id="Youtube_Color-3" data-name="Youtube / Color" d="M15.748,22.309c-.082,0-8.216-.078-10.709-.319-.119-.022-.262-.04-.427-.06a4.628,4.628,0,0,1-3.046-1.3A6.928,6.928,0,0,1,.315,17.486,48.786,48.786,0,0,1,0,12.352V9.946A48.834,48.834,0,0,1,.315,4.812,6.929,6.929,0,0,1,1.566,1.664,4.325,4.325,0,0,1,4.522.342l.2-.021C9.079,0,15.675,0,15.741,0h.014c.066,0,6.661,0,11.019.321l.2.021a4.323,4.323,0,0,1,2.955,1.322A6.94,6.94,0,0,1,31.18,4.812a48.8,48.8,0,0,1,.315,5.133v2.406a48.818,48.818,0,0,1-.315,5.133,6.941,6.941,0,0,1-1.252,3.148,4.327,4.327,0,0,1-2.952,1.323l-.2.021C22.413,22.3,15.814,22.309,15.748,22.309ZM12.494,6.356v8.912L21,10.828Z" fill="#018650"/>
+      </g>
+    </g>
+  </g>
+</svg>

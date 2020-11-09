@@ -1,0 +1,86 @@
+// FOOTER STYLINGS GO HERE
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+
+.footer {
+    background-color: $primary-black;
+    position: relative;
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+.footer--no-ref {
+    top: 50px;
+}
+
+// .footer--nav-list {
+//     a {
+//         font-family: 'Proxima Nova', sans-serif;
+//         font-weight: 400;
+//         font-size: 16px;
+//         color: rgba(255, 255, 255, .8)!important;
+//         padding: .5rem;
+//         @media(max-width: 576px) {
+//             margin: 3rem 1rem 3rem -1rem;
+//         }
+//     }
+//}
+.footer---copyright {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, .8)!important;
+}
+
+.footer--hide-desktop-nav {
+    display: block;
+    @media(max-width: 574px) {
+        display: none;
+    }
+}
+
+.footer--hide-mobile-nav {
+    display: none;
+    @media(max-width: 574px) {
+        display: block;
+    }
+}
+
+.footer--list {
+    // &.list-unstyled {
+    //     margin-top: 1rem!important;
+    //     margin-bottom: 1rem !important;
+    // }
+    // @media(max-width: 576px) {
+    //     margin-left: -1rem;
+    //     ul {
+    //         li {}
+    //     }
+    // }
+    li {
+        @media(max-width: 375px) {
+            // margin: 2rem 1rem 3rem -1rem!;
+        }
+        @media(max-width: 600px) {
+            margin: 2rem 1rem 3rem -.5rem!important;
+        }
+        a {
+            font-family: 'Proxima Nova', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(255, 255, 255, .8)!important;
+            padding: .5rem;
+        }
+    }
+}
+
+.footer--logo {
+    @media(max-width: 375px) {}
+    @media(max-width: 600px) {
+        margin-left: -.5rem!important;
+    }
+}

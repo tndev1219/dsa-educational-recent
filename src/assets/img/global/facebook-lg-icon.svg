@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="Facebook" transform="translate(0 -70)">
+    <g id="Rectangle" transform="translate(0 70)" fill="none" stroke="#018650" stroke-miterlimit="10" stroke-width="2">
+      <rect width="62" height="62" rx="31" stroke="none"/>
+      <rect x="1" y="1" width="60" height="60" rx="30" fill="none"/>
+    </g>
+    <g id="Facebook_Color" data-name="Facebook/Color" transform="translate(15.839 87.06)">
+      <g id="Facebook_Color-2" data-name="Facebook/Color">
+        <path id="Facebook_Color-3" data-name="Facebook / Color" d="M16.823,31.5H1.738A1.738,1.738,0,0,1,0,29.757V1.738A1.738,1.738,0,0,1,1.738,0H29.757A1.738,1.738,0,0,1,31.5,1.738V29.757A1.738,1.738,0,0,1,29.757,31.5H21.731V19.3h4.094l.613-4.753H21.731V11.511c0-1.376.382-2.314,2.356-2.314H26.6V4.944a33.647,33.647,0,0,0-3.668-.187c-3.629,0-6.113,2.215-6.113,6.283v3.505h-4.1V19.3h4.1V31.5Z" fill="#018650"/>
+      </g>
+    </g>
+  </g>
+</svg>

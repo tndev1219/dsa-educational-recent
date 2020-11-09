@@ -1,0 +1,47 @@
+// overrides that need to be updated once this is integrated...
+
+//from _base.scss
+body {
+    padding-top: 113px;
+}
+
+a {
+    color: $primary-black!important;
+    color: $primary-gray!important;
+    
+    &.active {
+        text-decoration: none;
+    }
+}
+
+
+//from _header.scss
+.navbar {
+
+    &--container {
+        height: 86px;
+        padding-top: 1.25rem;
+    }
+
+    &--eyebrow {
+        height: 33px;
+        padding-top: .125rem;
+    }
+}
+
+.navbar-desktop-layout--link {
+    border-bottom: 4px solid $white;
+}
+
+.btn-nav--search {
+    top: 0px;
+    left: 0px;
+}
+
+//from _globals.scss
+.container {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+button:focus {outline:0;}

@@ -1,0 +1,47 @@
+.modal-title {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 500;
+    color: $primary-black;
+}
+
+.modal-share-btn {
+    border: none;
+    background: transparent;
+    &:focus {
+        outline-color: none!important;
+    }
+}
+
+.modal--list-link {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 500;
+    font-size: 1rem;
+    color: $primary-green!important;
+    &:hover {
+        text-decoration: none!important;
+    }
+    // border-bottom: 1px solid red;
+    height: 48px;
+}
+
+.modal-content {
+    width: 68%;
+}
+
+.modal-body--transcript {
+    width: 1109px!important;
+    height: 900px!important;
+    margin: 0 3rem 0 -19rem;
+}
+
+.modal-body--transcript-text-container {
+    height: 879px;
+}
+
+// .close {
+//     border: 3px solid $primary-green!important;
+//     border-radius: 50%!important;
+//     width: 26px!important;
+//     height: 26px!important;
+//     padding: 0 7px 0 7px!important;
+// }

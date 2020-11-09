@@ -1,0 +1,107 @@
+//footer
+#footer{
+  background-color:#f3f3f4;
+  overflow: hidden;
+  padding-top:45px;
+  height:155px;
+  @media only screen and (max-width: $lg-break){
+    height:329px;
+  }
+  @media only screen and (max-width: $lg-break) {
+    padding-top: 35px;
+  }
+
+  .logo-cont{
+    display: inline-block;
+    margin-right: 35px;
+    margin-top:11px;
+    width:166px;
+    img{
+      width:100%;
+      height:auto;
+    }
+    @media only screen and (max-width: $lg-break){
+      width: 100%;
+      margin-bottom:35px;
+      margin-right:0;
+      a{
+        display: block;
+        width: 140px;
+        height:48px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .copy-cont{
+    width:77%;
+    display: inline-block;
+    vertical-align: top;
+
+    @media only screen and (max-width: $lg-break){
+      width:100%;
+    }
+
+    ul{
+      position: relative;
+      display: block;
+      width: auto;
+      height: 20px;
+      margin:0 0 15px;
+      padding:6px 0 0;
+      list-style-type: none;
+      text-align: left;
+      z-index: 999;
+      @media only screen and (max-width: $lg-break){
+        text-align: center;
+        width: 230px;
+        height: 45px;
+        margin: 0 auto 25px;
+      }
+
+      li {
+        display: inline-block;
+        margin: 0;
+        height:13px;
+        text-align: left;
+        a {
+          display: block;
+          @include primary-para;
+          text-decoration: none;
+          color: $black-font;
+          font-size: 15px;
+          line-height: 7px;
+          padding: 5px 15px 1px;
+          border-right: 1px solid $black-font;
+          &:hover{
+            text-decoration: underline;
+          }
+          &.first{
+            padding-left:0;
+          }
+          &.last{
+            border-right:none;
+          }
+          @media only screen and (max-width: $lg-break) {
+            &.no-brd{
+              border-right:none;
+              padding:0 15px;
+            }
+            &.first-mbl{
+              padding-left:0;
+            }
+          }
+        }
+      }
+    }
+    p{
+      @include primary-para;
+      color: $black-font;
+      font-size: 15px;
+      line-height:19px;
+      @media only screen and (max-width: $lg-break){
+        text-align: center;
+        padding:0 45px;
+      }
+    }
+  }
+}

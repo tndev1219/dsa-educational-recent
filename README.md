@@ -1,0 +1,1 @@
+Using [SASS Formatter](https://marketplace.visualstudio.com/items?itemName=sasa.vscode-sass-format) to auto format SCSS.

@@ -1,0 +1,30 @@
+<div class="modal fade" id="leaving" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span class="btn-close" aria-hidden="true">&nbsp;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p class="hf">You are about to go to another site.</p>
+				<p>Do you want to leave this site?</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary" id="leaving-yes">Yes</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	let leavingurl;
+	function leaving(e) {
+		leavingurl = e.getAttribute("href");
+		$('#leaving').modal('show');
+	}
+	$("#leaving-yes").click(function() {
+		window.open(leavingurl, '_blank');
+        $('#leaving').modal('hide');
+	});
+</script>

@@ -1,0 +1,70 @@
+/*
+===================================================
+ TABLE OF CONTENTS:
+
+1. BREAKPOINTS
+2. COLORS
+3. FONTS
+===================================================
+*/
+
+
+/*
+----------------------------------------------------
+ 1. BREAKPOINTS
+----------------------------------------------------
+*/
+
+$xlg-desktop-screen: 1800px;
+$lg-desktop-screen: 1500px;
+$tablet-screen: 1024px;
+$mobile-screen: 480px;
+$xs-mobile-screen: 374px;
+
+/*BOOTSTRAP BREAK POINTS*/
+
+//BOOTSTRAP BREAKPOINTS
+$bootstrap-small-devices: 576px;
+$bootstrap-medium-devices: 768px;
+$bootstrap-lg-devices: 992px;
+$bootstrap-xl-devices: 1200px;
+
+/*
+----------------------------------------------------
+ 2. COLORS
+----------------------------------------------------
+*/
+
+$primary-green: #018650;
+$primary-yellow: #EEF1B7;
+$primary-black: #232323;
+$primary-gray: #4C4C4C;
+$black: #000000;
+$white: #ffffff;
+$secondary-salmon: #F2766C;
+$secondary-blue: #005C81;
+$secondary-light-gray: #F0F0F0;
+$secondary-light-blue: #CEDEE1;
+$secondary-light-blue-bg: #E6EEF2;
+$secondary-orange: #FF7268;
+$callout-blue: #D0DEE1;
+
+$body-copy-color:#4C4C4C;
+
+$header-copy-color:#232323;
+
+/*
+----------------------------------------------------
+----------------------------------------------------
+*/
+
+
+/*
+----------------------------------------------------
+ 3. FONTS
+----------------------------------------------------
+*/
+
+$NOTO_SERIF: 'Noto Serif';
+$NOTO_SANS_SC:'Noto Sans SC';
+$NOTO_SANS: 'Noto Sans';

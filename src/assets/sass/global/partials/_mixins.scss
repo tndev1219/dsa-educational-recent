@@ -1,0 +1,32 @@
+@mixin chevron($cDirection: "right", $cSize: 10px, $cWidth: 2px, $cColor: black) {
+  // display: block;
+  width: $cSize;
+  height: $cSize;
+  border-top: 1px solid $cColor;
+  border-right: 1px solid $cColor;
+  border-width: $cWidth;
+
+  @if $cDirection == "top" {
+    @include rotate(-45deg);
+  }
+
+  @if $cDirection == "right" {
+    @include rotate(45deg);
+  }
+
+  @if $cDirection == "bottom" {
+    @include rotate(135deg);
+  }
+
+  @if $cDirection == "left" {
+    @include rotate(225deg);
+  }
+}
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  -moz-transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  transform: rotate($degrees);
+}

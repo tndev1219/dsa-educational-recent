@@ -1,0 +1,228 @@
+//TEXT STYLES HERE
+.header-text--h1 {
+    font-family: $NOTO_SERIF;
+    font-weight: 700;
+    font-size: 60px;
+    color: $primary-black;
+}
+
+.header-text--h2 {
+    font-family: $NOTO_SERIF;
+    font-weight: 700;
+    // font-size: 42px;
+    color: $primary-black;
+    @include fluid-type(30, 42, 375, 1500);
+}
+
+.header-text--h3 {
+    font-family: $NOTO_SERIF;
+    font-weight: 700;
+    font-size: 24px;
+    color: $primary-black;
+}
+
+.share-this-text--h3 {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 700;
+    font-size: 24px;
+    color: $primary-black;
+    @media(max-width: $bootstrap-small-devices) {
+        text-align: center;
+    }
+}
+
+.header-text--h4 {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 700;
+    font-size: 42px;
+    color: $primary-black;
+}
+
+.header-text--light {
+    font-family: $NOTO_SANS;
+    font-weight: 600;
+    font-size: 20px;
+    color: $secondary-salmon;
+}
+
+.header-text-signup--salmon {
+    font-family: $NOTO_SANS;
+    font-weight: 700;
+    font-size: 20px;
+    color: $secondary-salmon;
+}
+
+.header-text-header-eyebrow--bold {
+    font-family: $NOTO_SANS;
+    font-weight: 700;
+    font-size: 24px;
+    color: $primary-black;
+}
+
+.header-text--dark {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 500;
+    font-size: 20px;
+    color: $primary-black;
+}
+
+.paragraph-text--bold-16 {
+    font-family: $NOTO_SANS;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $body-copy-color;
+}
+
+.paragraph-text--regular-12 {
+    font-family: $NOTO_SANS;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: $body-copy-color;
+}
+
+.paragraph-text--regular-14 {
+    font-family: $NOTO_SANS;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $body-copy-color;
+}
+
+.paragraph-text--regular-16 {
+    font-family: $NOTO_SANS;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $primary-black;
+
+    &-gray {
+        color: $primary-gray;
+    }
+}
+
+.paragraph-text--medium-condensed-16 {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $body-copy-color;
+}
+
+.paragraph-text--medium-condensed-20 {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $body-copy-color;
+}
+
+.paragraph-text--bold-condensed-20 {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $body-copy-color;
+}
+
+//UL LIST STYLES 
+.ul-list--general-style {
+    margin-left: -1rem;
+    li {
+        color: $secondary-salmon;
+    }
+}
+
+.paragraph-text--medium-20 {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: $body-copy-color;
+}
+
+.paragraph-text--bold-14 {
+    font-family: $NOTO_SANS;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: $body-copy-color;
+}
+
+.paragraph-text--bold-20 {
+    font-family: $NOTO_SANS;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $body-copy-color;
+}
+
+.paragraph-text--bold-24 {
+    font-family: $NOTO_SANS;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: $body-copy-color;
+}
+
+.text-color--white {
+    color: $white!important;
+}
+
+.text-color--black-85 {
+    color: $primary-black;
+}
+
+.text-color--primary-green {
+    color: $primary-green;
+}
+
+.text-color--primary-yellow {
+    color: $primary-yellow;
+}
+
+.text-color--secondary-gray {
+    color: $primary-gray;
+}
+
+.text-color--secondary-salmon {
+    color: $secondary-salmon;
+}
+
+.text-color--secondary-blue {
+    color: $secondary-blue;
+}
+
+.text-color--secondary-light-blue {
+    color: $secondary-light-blue;
+}
+
+
+
+.text--font-size-30 {
+    font-size: 30px;
+}
+
+.text--border-box--secondary-light-blue {
+    border: 2px solid $secondary-light-blue;
+    padding-left: .1rem;
+    padding-right: .1rem;
+}
+
+.text--border-box--primary-black {
+    border: 2px solid $primary-black;
+    padding-left: .1rem;
+    padding-right: .1rem;
+}
+
+.text--color--primary-black-25 {
+    color: rgba($primary-black, .25);
+}
+
+.color--primary-green-link {
+    color:$primary-green!important;
+    a {
+        color:$primary-green!important;
+    }
+}

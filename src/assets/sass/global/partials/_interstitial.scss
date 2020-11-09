@@ -1,0 +1,123 @@
+.modal {
+  z-index: 999999999;
+}
+.modal-content {
+  top:108px;
+  border-radius: 0;
+  width: 39rem;
+  margin:0 auto;
+  @media only screen and (max-width: $lg-break){
+    width:100%;
+  }
+}
+
+.modal-header {
+  border: 0;
+  padding: 23px 1rem;
+  button.close{
+    position: absolute;
+    top:15px;
+    right:15px;
+    width:30px;
+    height:30px;
+    margin:0;
+    padding:0;
+    outline:0;
+    opacity: 1;
+
+    span.btn-close{
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin:0;
+      padding:0;
+      width:30px;
+      height:30px;
+      background: url(../img/global/btn-close.png) no-repeat top left;
+      background-size: 30px;
+    }
+  }
+  @media only screen and (max-width: $med-break){
+    padding: 22px 1rem;
+    button.close{
+      top:15px;
+      right:15px;
+      width:26px;
+      height:26px;
+
+      span.btn-close{
+        width:26px;
+        height:26px;
+        background: url(../img/global/btn-close.png) no-repeat top left;
+        background-size: 26px;
+      }
+    }
+  }
+
+}
+.modal-body {
+  text-align: center;
+  padding: 0 1rem ;
+  .hf{
+    @include primary-para-bold;
+    color:$dark-blue;
+    font-size:24px;
+  }
+  p{
+    @include primary-para;
+    color:$dark-blue;
+    font-size:20px;
+  }
+  @media only screen and (max-width: $med-break){
+    padding: 25px 1rem 0;
+    .hf{
+      font-size: 22px;
+    }
+    p{
+      font-size:18px;
+    }
+  }
+}
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  padding-bottom:45px;
+  @media only screen and (max-width: $med-break){
+    display: block;
+    padding-bottom:1rem;
+  }
+  .btn{
+    transition: none;
+    outline: none;
+  ;
+  }
+  button {
+    @include primary-para-bold;
+    width: 45%;
+    height: 45px;
+    border: 0;
+    color: #1d285b;
+    border-radius: 0;
+    outline:none;
+    @media only screen and (max-width: $med-break){
+      display: block;
+      width: 100%;
+      margin-left:auto!important;
+      margin-right:auto!important;
+    }
+  }
+  button.btn-secondary {
+    background-color: #ebeced;
+    margin-right: 1rem;
+    @media only screen and (max-width: $med-break) {
+      margin-bottom: 10px;
+    }
+  }
+  button.btn-primary {
+    background-color: #fecd00;
+    @media only screen and (max-width: $med-break) {
+      margin-bottom: 30px;
+    }
+  }
+}

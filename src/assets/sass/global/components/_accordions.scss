@@ -1,0 +1,121 @@
+    //ACCORDION STYLING GOES HERE
+    .at-accordion {
+        max-width: 446px;
+        border: none;
+        border-radius: 0;
+    }
+
+    .at-accordion .card,
+    .at-accordion .card:last-child .card-header {
+        .at-accordion .card-header {
+            // border-bottom-color: $primary-gray;
+            background: $white;
+            border: none;
+            border-radius: none;
+        }
+        .card-header {
+            border-top: 1px solid rgba(0, 0, 0, .25);
+            border-bottom: 1px solid rgba(0, 0, 0, .25);
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+        .at-accordion .fa-stack {
+            font-size: 18px;
+        }
+        .at-accordion .btn {
+            width: 100%;
+            font-weight: bold;
+            color: $primary-black;
+            padding: 0;
+        }
+        .at-accordion .btn-link:hover,
+        .at-accordion .btn-link:focus {
+            text-decoration: none;
+        }
+        .at-accordion li+li {
+            margin-top: 10px;
+        }
+        .reveal-button {
+            $width: 16px;
+            $height: 4px;
+            $border-radius: 0px;
+            position: relative;
+            font-size: 20px;
+            font-weight: 500;
+            width: $width;
+            height: $width;
+            //margin-left: -50px!important;
+            cursor: pointer;
+            transition: ease all .2s;
+            &:focus {
+                outline-color: none;
+            }
+            &::before {
+                transform: rotate(0deg);
+            }
+            &::after {
+                opacity: 1;
+                transform: rotate(-90deg);
+            }
+            &::before,
+            &::after {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: $width;
+                height: $height;
+                background-color: $primary-green;
+                border-radius: $border-radius;
+                content: '';
+                transition: all 0.4s ease-in-out;
+            }
+            &.opened {
+                &::before {
+                    transform: rotate(180deg);
+                }
+                &::after {
+                    opacity: 0;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    .at-accordion-card {
+        border: none;
+        border-radius: 0;
+
+        .card-body {
+            padding: .75rem 0;
+
+            p {
+                width: 75%;
+            }
+        }
+    }
+
+    .at-accordion-card-header {
+        border-radius: 0;
+        padding-left: 0;
+
+        button.btn-link {
+            padding: 0;
+        }
+    }
+
+    .at-accordion-card-header-h2 {
+        $font-family: $NOTO_SANS_SC;
+        font-weight: 500;
+        font-size: 20px;
+        color: $primary-black;
+        width: 410px;
+        text-align: left;
+        @media(max-width: 576px) {
+            width: 300px;
+            margin-left: -2rem!important;
+        }
+    }
+
+    .accordion-bottom-border {
+        border-bottom: 1px solid rgba(0, 0, 0, .25);
+    }

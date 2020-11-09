@@ -1,0 +1,142 @@
+.signup--form-container {
+    background-color: $white;
+    border-radius: 10px;
+    max-width: 730px;
+    @media (max-width: 376px) {
+        max-width: 344px;
+    }
+}
+
+.signup--form--toggle-btn-container {
+    margin-left: 4.5rem;
+    @media (max-width: $bootstrap-small-devices) {
+        margin-left: 0;
+    }
+
+}
+
+.signup--form-disclaimer-text-container {
+    max-width:540px;
+    @media (max-width: $bootstrap-small-devices) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+       max-width: 371px;
+    }
+}
+
+.signup-form--border-toggle {
+    border-bottom:solid 4px $primary-green;
+}
+
+.signup--form-submit-btn {
+  
+    @include makeOutlineButton($bg-color: $primary-green, $border-color: $primary-green, $text-color: $white, $font-size: 16px, $font-weight: 700, $padding-sizes: 10px 34px 10px 34px);
+   
+    @media(max-width: $bootstrap-small-devices) {
+        width: 100%;
+    }
+}
+
+
+
+.signup--form-email-input {
+    width:540px;
+    margin-left: -.5rem;
+    @media (max-width: $bootstrap-small-devices) {
+        width: 314px;
+    }
+}
+.signup--form-lastname-input {
+    width:255px;
+    @media (max-width: $bootstrap-small-devices) {
+        width: 314px;
+    }
+}
+.signup--form-firstname-container {
+    margin-left: -1rem;
+    @media (max-width: $bootstrap-small-devices) {
+        margin-left: 0rem;
+        margin-bottom: .5rem;
+    }
+}
+
+.signup--form-lastname-container {
+    margin-left: -1rem;
+    @media (max-width: $bootstrap-small-devices) {
+        margin-left: -.5rem;
+        margin-bottom: .5rem;
+    }
+}
+.signup--form-zipcode-container {
+    margin-left:1rem;
+    @media (max-width: $bootstrap-small-devices) {
+        margin-left: -.5rem;
+        margin-top: 2rem;
+    }
+}
+
+
+.signup--form-age-container {
+    margin-left: -2rem;
+    @media (max-width: $bootstrap-small-devices) {
+        margin-left: -1rem;
+       
+    }
+}
+
+.signup--form-email-container {
+    margin-left:-.5rem;
+    @media (max-width:$bootstrap-small-devices) {
+        margin-left: 0rem;
+        margin-bottom: .5rem;
+    }
+}
+.signup--form-firstname-input {
+    width:255px;
+    @media (max-width: $bootstrap-small-devices) {
+        width: 314px;
+    }
+}
+.signup--form-zip-input {
+    width:255px;
+    @media (max-width: 576px) {
+        width: 314px;
+    }
+     
+}
+.signup--form-age-combobox {
+   width:255px;
+   @media (max-width: $bootstrap-small-devices) {
+    width: 314px;
+    }
+}
+
+
+.signup-form--toggle-text {
+    font-size: 20px!important;
+    margin-bottom: -.5rem!important;
+}
+
+.signup--form-yellow-bg-container {
+    z-index: -1;
+    position: absolute;
+    top:-80px; 
+    left:80px;
+
+    @media (max-width:$bootstrap-small-devices) {
+        left:-100px;
+    }
+}
+
+.signup--form-blue-bg-container {
+    z-index: -1;
+    position: absolute;
+    top:500px;
+    left:850px; 
+    margin-bottom:20vh;
+    @media (max-width: $bootstrap-small-devices) {
+        top:600px;
+        left:140px;
+    }
+}
+

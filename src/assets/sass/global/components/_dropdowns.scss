@@ -1,0 +1,99 @@
+        .dropdown-content {
+            width: 232px;
+            height: auto;
+            // margin: 0 auto;
+            //padding: 30px;
+            margin-top: -20px;
+        }
+        
+        .nav-pills {
+            width: 140px;
+        }
+        
+        .nav-item {
+            width: 100%;
+        }
+        
+        .nav-pills .nav-link {
+            font-weight: 400;
+            padding-top: 50px;
+            text-align: center;
+            background: #343436;
+            color: #fff;
+            /*border-radius: 30px;*/
+            border-radius: 0!important;
+            // height: 120px;
+            padding-bottom: 0px;
+        }
+        
+        .nav-pills .nav-link.active {
+            background: transparent;
+            color: $primary-green;
+            margin-top: -20px;
+        }
+        
+        .tab-content {
+            position: absolute;
+            width: 232px;
+            height: auto;
+            margin-top: -2px;
+            // background: #fff;
+            color: $primary-black;
+            /*border-radius: 30px;*/
+            // z-index: 1000;
+            //  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+            padding: 30px 10px 30px 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tab-content button {
+            /* border-radius: 15px;*/
+            width: 100px;
+            margin: 0 auto;
+            float: right;
+        }
+        
+        .life-stages-btn {
+            li {
+                a {
+                    font-family: $NOTO_SANS_SC;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: $primary-black;
+                }
+            }
+        }
+        
+        .life-stages-tab--nav-list {
+            li {
+                a {
+                    cursor: pointer;
+                    font-family: $NOTO_SANS_SC;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    color: $primary-black!important;
+                    &:active {
+                        color: $primary-black!important;
+                    }
+                    &:hover {
+                        color: $primary-green!important;
+                    }
+                }
+            }
+        }
+        
+        .life-stages-tab--nav-link {
+            color: $primary-black!important;
+        }
+        
+        // .nav-link {
+        //     color: $primary-black!important;
+        // }
+        
+        .nav-link--on {
+            color: $primary-green!important;
+        }
+        
+        .dropdown-toggle::after {
+            content: none;
+        }

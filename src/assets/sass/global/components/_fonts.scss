@@ -1,0 +1,82 @@
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?8782tt');
+    src:  url('../fonts/icomoon.eot?8782tt#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?8782tt') format('truetype'),
+      url('../fonts/icomoon.woff?8782tt') format('woff'),
+      url('../fonts/icomoon.svg?8782tt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-share-lg-icon:before {
+    content: "\e90c";
+    // color: #018650;
+  }
+  .icon-facebook-lg-icon:before {
+    content: "\e90d";
+    // color: #018650;
+  }
+  .icon-youtube-lg-icon:before {
+    content: "\e90e";
+    // color: #018650;
+  }
+  .icon-close-mobile-icon:before {
+    content: "\e908";
+    // color: #018650;
+  }
+  .icon-hamburger-icons:before {
+    content: "\e909";
+    // color: #018650;
+  }
+  .icon-search-mobile-icon:before {
+    content: "\e90a";
+    // color: #018650;
+  }
+  .icon-doximity-icon:before {
+    content: "\e90b";
+  }
+  .icon-link-solid:before {
+    content: "\e902";
+  }
+  .icon-linkedin-brands:before {
+    content: "\e904";
+  }
+  .icon-envelope-regular:before {
+    content: "\e905";
+  }
+  .icon-facebook-square-brands:before {
+    content: "\e906";
+  }
+  .icon-twitter-brands:before {
+    content: "\e907";
+  }
+  .icon-arrow-icon-white:before {
+    content: "\e901";
+    // color: #fff;
+  }
+  .icon-dropdown-icon:before {
+    content: "\e903";
+  }
+  .icon-link-out-icon:before {
+    content: "\e900";
+    // color: #018650;
+  }
+  

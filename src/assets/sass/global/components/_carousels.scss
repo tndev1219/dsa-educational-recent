@@ -1,0 +1,87 @@
+.carousel-large-image-format---controls {
+    position: relative;
+    width: 300px;
+    margin-top: 6vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    z-index: -1;
+    .carousel-control-prev {
+        left: 110px;
+        top: -10px;
+        a {
+            img {
+                filter: invert(.5) sepia(1);
+            }
+        }
+    }
+    .carousel-control-next {
+        right: 8px;
+        top: -10px;
+    }
+}
+
+.carousel-large-image-format-indicators {
+    width: 145px;
+    margin-left: 14.5vw;
+    z-index: -1;
+    &.carousel-indicators {
+        top: 95%;
+        left: 58px;
+        bottom: 0px;
+        li {
+            background-color: $primary-green;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
+
+//LARGE FORMAT MOBILE IMAGE CONTROLS
+.carousel-large-image-format-mobile--controls {
+    position: relative;
+    width: 300px;
+    margin-top: -6vh;
+    margin-left: 2vw;
+    z-index: -1;
+    .carousel-control-prev {
+        left: 48px;
+        top: -10px;
+       
+    }
+    .carousel-control-next {
+        right: 13px;
+        top: -10px;
+       
+    }
+}
+
+.carousel-large-image-format-mobile-indicators {
+    width: 145px;
+    margin-left: 8vw;
+    &.carousel-indicators {
+        left: 60px;
+        bottom: 33px;
+        li {
+            background-color: $primary-black;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
+
+.carousel-item--quote {
+    font-family: $NOTO_SANS_SC;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: $primary-gray;
+}
+
+.carousel-item--quote-name {
+    font-family: $NOTO_SERIF;
+    font-weight: 700;
+    font-size: 16px;
+    color: $primary-gray;
+}

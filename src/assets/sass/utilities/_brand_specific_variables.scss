@@ -1,0 +1,87 @@
+//=====bootstrap breakpoints
+$small-break: 576px;
+$med-break: 768px;
+$lg-break: 992px;
+$xl-break: 1200px;
+
+//=====container max-widths
+$mobile-max: 375px;
+$desktop-max: 1440px;
+
+//=====brand colors
+$off-white: #f5f5f5;
+$light-grey: #eeeeee;
+$dark-grey: #4b4a4c;
+$yellow: #ffcd00;
+$orange: #ea953d;
+$light-blue: #eef8fc;
+$dark-blue: #001e60;
+$bkg-grey:#f4f4f4;
+$brd-grey:#e7e7e7;
+
+
+$purple: #6f3e7c;
+$pink: #a04183;
+$light-pink: #fbe4e4;
+//=====font properties
+$black-font: #414042;
+$white-font: #cfcfcf;
+$font-size-para: 18px;
+
+//=====animation speeds
+//bootstrap container animation
+$cont-anim-spd: 1s;
+//Home - Hero Copy anim
+$home-anim-spd:1s;
+
+
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src:  url('../fonts/HelveticaNeueLTW05-77BoldCn.woff2') format('woff2'),
+  url('../fonts/HelveticaNeueLTW05-77BoldCn.woff') format('woff'),
+  url('../fonts/HelveticaNeueLTStd-BdCn.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Helvetica Neue Med';
+  src:  url('../fonts/HelveticaNeueLTW05-67MdCn.woff2') format('woff2'),
+  url('../fonts/HelveticaNeueLTW05-67MdCn.woff') format('woff'),
+  url('../fonts/HelveticaNeueLTStd-Cn.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src:  url('../fonts/HelveticaNeueLTW05-57Cond.woff2') format('woff2'),
+  url('../fonts/HelveticaNeueLTW05-57Cond.woff') format('woff'),
+  url('../fonts/HelveticaNeueLTStd-Cn.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Helvetica Neue light';
+  src:  url('../fonts/HelveticaNeueLTW05-47LtCn.woff2') format('woff2'),
+  url('../fonts/HelveticaNeueLTW05-47LtCn.woff') format('woff'),
+  url('../fonts/HelveticaNeueLTStd-LtCn.ttf') format('ttf');
+}
+
+@mixin primary-para-bold{
+  font-family: 'Helvetica Neue Bold',tablet-gothic-condensed, Helvetica, sans-serif;
+  color: $black-font;
+}
+@mixin primary-para-med{
+  font-family: 'Helvetica Neue Med',tablet-gothic-condensed, Helvetica, sans-serif;
+  color: $black-font;
+}
+@mixin primary-para{
+  font-family: 'Helvetica Neue',tablet-gothic-condensed, Helvetica, sans-serif;
+  color: $black-font;
+}
+@mixin primary-para-light{
+  font-family: 'Helvetica Neue light',tablet-gothic-condensed, Helvetica, sans-serif;
+  color: $black-font;
+}
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}

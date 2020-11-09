@@ -1,0 +1,19 @@
+.references-tray {
+    position: relative;
+    width: 100vw!important;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+.references-tray--desktop-layout {
+    @media(max-width: $bootstrap-small-devices) {
+        display: none;
+    }
+}
+
+.references-tray--mobile-layout {
+    display: none;
+    @media(max-width: $bootstrap-small-devices) {
+        display: block;
+    }
+}

@@ -1,0 +1,217 @@
+$nav-height: 40px;
+$nav-height-mbl: 63px;
+
+#nav {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: $nav-height;
+  padding: 0;
+  margin: 0;
+  z-index: 99999;
+  transition: height 1s;
+  @media only screen and (max-width:$med-break){
+    height: $nav-height-mbl;
+    .container{
+      transition: none;
+    }
+  }
+
+  nav {
+    position: relative; // for collapsed menu
+    height: $nav-height;
+
+    div.cont-menu{
+      position: relative;
+      display: inline-block;
+      top:9px;
+      float:right;
+      width:27px;
+      height:22px;
+      cursor: pointer;
+      div{
+        position: absolute;
+        top:0;
+        left:0;
+        width:27px;
+        height:4px;
+        background-color:$purple;
+        border-radius: 3px;
+        transition: all 0.5s;
+        &:nth-of-type(2){
+          top:10px;
+        }
+        &:nth-of-type(3){
+          top:20px;
+        }
+      }
+      @media only screen and (max-width:$med-break){
+        top:15px;
+        width:35px;
+        height:31px;
+        div{
+          width:35px;
+          transition: all 0.5s;
+          &:nth-of-type(2){
+            top:14px;
+          }
+          &:nth-of-type(3){
+            top:28px;
+          }
+        }
+      }
+    }
+    div.cont-menu{
+      z-index: 9999;
+      &.minus{
+        div{
+          &:nth-of-type(1){
+            top:9px;
+            transform: rotate(45deg);
+            background-color: #ffffff;
+            @media only screen and (max-width:$med-break){
+              top:14px;
+            }
+          }
+          &:nth-of-type(2){
+            opacity: 0;
+          }
+          &:nth-of-type(3){
+            top:9px;
+            transform: rotate(-45deg);
+            background-color: #ffffff;
+            @media only screen and (max-width:$med-break){
+              top:14px;
+            }
+          }
+        }
+      }
+
+    }
+
+    ul{
+      position: absolute;
+      right:63px;
+      display: inline-block;
+      width: auto;
+      min-width:592px;
+      height: $nav-height;
+      margin:0;
+      padding:6px 0 0;
+      list-style-type: none;
+      text-align: right;
+      z-index: 999;
+
+      li {
+        display: inline-block;
+        margin: 0;
+        height:13px;
+        text-align: left;
+        a {
+          display: block;
+          @include primary-para;
+          text-decoration: none;
+          color: $black-font;
+          font-size: 13px;
+          line-height: 5px;
+          padding: 3px 15px 3px;
+          border-right: 1px solid $black-font;
+          &.last{
+            border-right:none;
+            padding-right: 0;
+          }
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      @media only screen and (max-width:$med-break){
+        position: absolute;
+        right:auto;
+        left:0;
+        width:290px;
+        min-width: auto;
+        text-align: left;
+        padding:8px 0 0;
+        height: $nav-height-mbl;
+        li > a {
+          padding: 5px 10px 3px;
+          &.first{
+            padding-left:0;
+          }
+          &.mbl{
+            border-right:none;
+            padding-right: 0;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+#menu{
+  display:block;
+  position: absolute;
+  top:-100vh;
+  right:0;
+  height:100vh;
+  width:100vw;
+  background-color:transparent;
+  background-image: url("../img/global/menu-bkg.png");
+  background-size:100% 1000px;
+  background-repeat: no-repeat;
+  background-position-y: -400px;
+  z-index: 999;
+  transition: top 1s;
+  @media only screen and (max-width:$med-break){
+    background-size:2000px 1000px;
+    background-position-x: center;
+  }
+  &.open{
+    top:0;
+  }
+  .cont-flyout{
+    position: relative;
+    margin-left:auto;
+    width:100%;
+    height:auto;
+    padding: 40px 0 0;
+    @media only screen and (max-width:$med-break){
+      padding-top:70px;
+    }
+    div.menu-item{
+      width:300px;
+      height: 90px;
+      margin:0 auto;
+      @media only screen and (max-width:$med-break){
+        height:70px;
+      }
+      a{
+        @include primary-para-light;
+        display: block;
+        color:#ffffff;
+        text-align: center;
+        font-size: 40px;
+        line-height: 1.5;
+        @media only screen and (max-width:$med-break){
+          font-size: 32px;
+        }
+        &:hover{
+          text-decoration: none;
+          &::after{
+            content: "";
+            background: url(../img/global/menu-active.png) no-repeat;
+            width: 150px;
+            height: 10px;
+            display: block;
+            margin:0 auto;
+          }
+        }
+      }
+    }
+  }
+
+
+}

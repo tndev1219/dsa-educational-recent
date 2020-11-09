@@ -1,0 +1,199 @@
+---
+title: DTC Signup
+meta-description: #
+layout: base.hbs
+url-src: ./
+active-page: dtc-signup
+canon-url: #
+
+legal-code:
+year: 2020
+
+---
+
+<section id="dtc-signup">
+    <main role="main" class="container-fluid" style="margin-top: 10vh;">
+        <div class="row mb-5">
+            <div class="col-12">
+                <div id="signup--form-container" class="signup--form-container bg--white shadow--lt-3 mx-auto">
+                    <div  class="px-3 pt-5">
+                        <div class="text-center">
+                            <h1 class="header-text--h2">Stay connected</h1>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-left pl-5 ml-5">
+                                <h2 class="header-text-signup--salmon uppercase-text" style="margin-left: -1.5rem;">I AM A:</h2>
+                            </div>
+                            <!-- signup form toggle -->
+                            <div class="d-flex signup--form--toggle-btn-container">
+                                <div id="signup--form-caregiver-btn" class="signup-form--toggle cursor--add-pointer">
+                                    <p class="toggle-btn-text-1 toggle-btn--text signup-form--toggle-text pl-1" style="text-align: center!important;">Caregiver & Patient</p>
+                                    <hr class="toggle-btn-highlight-1 toggle-btn--highlight" style="width:110%;">
+                                </div>
+
+                                <div id="signup--form-hcp-btn" class="signup-form--toggle cursor--add-pointer" style="margin-left: 2rem; margin-right: 3.5rem;">
+                                    <p class="toggle-btn-text-2 toggle-btn--text px-5  toggle--off-text signup-form--toggle-text" style="margin-top: .03rem;">Healthcare Professional</p>
+                                    <hr class="toggle-btn-highlight-2 toggle-btn--highlight toggle--off-bg w-75">
+                                </div>
+                            </div>
+                            <!-- signup form toggle -->
+                            <div>
+                                <!-- CAREGIVER FORM -->
+                                <form id="signup--form-caregiver-form">
+                                    <!-- <div class="form-group"> -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-center flex-row flex-wrap" style="margin-bottom:2vh;">
+                                                <div class="pr-2 pr-sm-0 signup--form-firstname-container">
+                                                    <div class="text-left">
+                                                        <label class="paragraph-text--regular-16" for="firstName">First Name<span class="text-color--secondary-salmon">*</span></label>
+                                                    </div>
+                                                    <input type="text" class="form-control signup--form-firstname-input" id="firstName" aria-describedby="firstName">
+                                                </div>
+
+                                                <div class="pl-xl-3 pl-lg-3 pl-md-3 pl-sm-0 ml-xl-1 ml-lg-1 ml-md-1 ml-sm-0 ml-xs-0 signup--form-lastname-container">
+                                                    <div class="text-left">
+                                                        <label for="lastName">Last Name<span class="text-color--secondary-salmon">*</span></label>
+                                                    </div>
+                                                    <input type="text" class="form-control signup--form-lastname-input" id="lastName" aria-describedby="lastName" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx-auto">
+
+                                            <div class="d-flex flex-column justify-content-center mt-0 signup--form-email-container">
+                                                <div class="text-left">
+                                                    <label for="emailCaregiver" style="margin-left:-.5rem;">Email<span class="text-color--secondary-salmon">*</span></label>
+                                                </div>
+                                                <input type="email" class="form-control signup--form-email-input" id="emailCaregiver" aria-describedby="emailCaregiver">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-4 signup--form-age-container">
+                                        <div class="d-flex flex-wrap justify-content-center">
+                                            <div class="pr-2">
+                                                <div class="text-left">
+                                                    <label for="ageSelect">Age</label>
+                                                </div>
+                                                <select class="form-control signup--form-age-combobox" id="ageSelect">
+                                                    <option>2020</option>
+                                                    <option>2019</option>
+                                                    <option>2018</option>
+                                                    <option>2017</option>
+                                                    <option>2016</option>
+                                                </select>
+                                            </div>
+                                            <div class="signup--form-zipcode-container">
+                                                <div class="text-left">
+                                                    <label for="zipCode">ZIP Code<span class="text-color--secondary-salmon">*</span></label>
+                                                </div>
+                                                <input type="text" class="form-control signup--form-zip-input" id="zipCode" aria-describedby="zipCode">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-5">
+                                        <div class="text-left signup--form-disclaimer-text-container">
+                                            <p class="paragraph-text--regular-14"><span class="text-color--secondary-salmon">*</span>Required field</p>
+                                            <p class="paragraph-text--regular-12">By clicking submit, you are confirming you are a patient/caregiver, 18 years of age or older and have read, understand, and agree to all of the <a href="#"> <span class="bold-text text-color--primary-green text-underline">Terms of Service.</span></a></p>
+                                            <p class="paragraph-text--regular-12">Your privacy is important to us. We will use the information provided on this form to stay in contact with you and provide educational materials and/or information about products and services for Galactosemia. For more information on how we will use, store, and protect the personal information provided through this form and on the website, please read our <span class="bold-text text-color--primary-green text-underline">Privacy policy</span>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-left">
+                                        <div class="pl-xl-5 pl-lg-5 pl-md-5 pl-sm-0 pl-xs-0 ml-xl-4 ml-lg-4 ml-md-4 ml-sm-0 ml-xs-0 my-5" style="padding-bottom: 15vh;">
+                                            <button id="submitCaregiver" class="signup--form-submit-btn ">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- HCP FORM -->
+                                <form id="signup--form-hcp-form" style="display: none;">
+                                    <!-- <div class="form-group"> -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-center flex-row flex-wrap" style="margin-bottom:2vh;">
+                                                <div class="pr-2 signup--form-firstname-container">
+                                                    <div class="text-left">
+                                                        <label class="paragraph-text--regular-16" for="firstNameHCP">First Name<span class="text-color--secondary-salmon">*</span></label>
+                                                    </div>
+                                                    <input type="text" class="form-control signup--form-firstname-input" id="firstNameHCP" aria-describedby="firstNameHCP">
+                                                </div>
+
+                                                <div class="pl-xl-3 pl-lg-3 pl-md-3 pl-sm-0 ml-xl-1 ml-lg-1 ml-md-1 ml-sm-0 ml-xs-0 signup--form-lastname-container">
+                                                    <div class="text-left">
+                                                        <label for="lastNameHCP">Last Name<span class="text-color--secondary-salmon">*</span></label>
+                                                    </div>
+                                                    <input type="text" class="form-control signup--form-lastname-input" id="lastNameHCP" aria-describedby="lastNameHCP" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx-auto">
+
+                                            <div class="d-flex flex-column justify-content-center mt-0 signup--form-email-container">
+                                                <div class="text-left">
+                                                    <label for="emailCaregiverHCP" style="margin-left:-.5rem;">Email<span class="text-color--secondary-salmon">*</span></label>
+                                                </div>
+                                                <input type="email" style="margin-left:-.5rem;" class="form-control signup--form-email-input" id="emailCaregiverHCP" aria-describedby="emailCaregiverHCP">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-4 signup--form-age-container">
+                                        <div class="d-flex flex-wrap justify-content-center">
+                                            <div class="pr-2">
+                                                <div class="text-left">
+                                                    <label for="specialtySelectHCP">Speciality</label>
+                                                </div>
+                                                <select class="form-control signup--form-age-combobox" id="specialtySelectHCP">
+                                                    <option>Metabolic geneticist</option>
+                                                    <option>Metabolic dietitian</option>
+                                                    <option>Neurologist</option>
+                                                    <option>OB-GYN</option>
+                                                    <option>Ophthalmologist</option>
+                                                    <option>Pediatrician</option>
+                                                    <option>Primary care provider</option>
+                                                    <option>Psychiatrist</option>
+                                                    <option>Psychologist</option>
+                                                    <option>Speech therapist</option>
+                                                </select>
+                                            </div>
+                                            <div class="signup--form-zipcode-container">
+                                                <div class="text-left">
+                                                    <label for="zipCodeHCP">ZIP Code<span class="text-color--secondary-salmon">*</span></label>
+                                                </div>
+                                                <input type="text" class="form-control signup--form-zip-input" id="zipCodeHCP" aria-describedby="zipCodeHCP">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-5">
+                                        <div class="text-left signup--form-disclaimer-text-container">
+                                            <p class="paragraph-text--regular-14"><span class="text-color--secondary-salmon">*</span>Required field</p>
+                                            <p class="paragraph-text--regular-12">By clicking submit, you are confirming you are a patient/caregiver, 18 years of age or older and have read, understand, and agree to all of the <a href="#"> <span class="bold-text text-color--primary-green text-underline">Terms of Service.</span></a></p>
+                                            <p class="paragraph-text--regular-12">Your privacy is important to us. We will use the information provided on this form to stay in contact with you and provide educational materials and/or information about products and services for Galactosemia. For more information on how we will use, store, and protect the personal information provided through this form and on the website, please read our <span class="bold-text text-color--primary-green text-underline">Privacy policy</span>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-left">
+                                        <div class="pl-5 ml-4 my-5" style="padding-bottom: 15vh;">
+                                            <button id="submitHCP" class="signup--form-submit-btn">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- background images -->
+                <div class="signup--form-yellow-bg-container">
+                    <img src="./assets/images/signup/signup-yellow-bg@2x.png" width="449" />
+                </div>
+
+                <div class="signup--form-blue-bg-container" >
+                    <img src="./assets/images/signup/signup_blue-bg@2x.png" width="246" />
+                </div>
+                <!-- background images -->
+            </div>
+        </div>
+    </main>
+</section>

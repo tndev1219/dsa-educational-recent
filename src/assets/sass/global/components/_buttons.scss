@@ -1,0 +1,223 @@
+//STYLING FOR BUTTONS HERE
+//default button
+.btn-hero--primary-green {
+    @include makeOutlineButton();
+}
+
+// next section button
+.btn-section--primary-green {
+    background-color: $primary-green;
+    padding: 2rem 2rem 2rem 1rem;
+    width: 42%;
+    border-radius: 10px 0px 0px 10px;
+    font-family: $NOTO_SANS_SC;
+    font-weight: 400;
+    font-size: 24px;
+    a {
+        color: $white!important;
+        text-decoration: none;
+        span:nth-child(1) {
+            font-weight: 700;
+        }
+    }
+}
+
+.btn--next-section--primary-green {
+    background-color: $primary-green;
+    border-radius: 8px 0px 0px 8px;
+    width: 600px;
+    height: 78px;
+    cursor: pointer;
+    transition: border, background-color, .25s;
+    border: 1px solid $white;
+    @media(max-width: $bootstrap-small-devices) {
+        margin-left: 2rem;
+    }
+    @media(min-width: 400px) {
+        margin-left: 7rem;
+    }
+    @media(max-width: 576px) {
+        width: 336px;
+    }
+    @media(min-width:1400px) {
+        margin-left: 20rem!important;
+    }
+    @media(min-width:2000px) {
+        margin-left: 30rem!important;
+    }
+    p {
+        transition: color .25s;
+        color: $white;
+        span {
+            font-weight: 300!important;
+        }
+    }
+    &:hover {
+        -webkit-transition: border, background-color .25s;
+        -moz-transition: border, background-color .25s;
+        transition: border, background-color .25s;
+        border: 1px solid $primary-green;
+        background-color: $white;
+        text-decoration: none!important;
+        p {
+            color: $primary-green;
+        }
+    }
+}
+
+// outline button for body content 
+.btn--resources {
+    //@mixin makeOutlineButton($bg-color:$primary-green, $border-color:$primary-green, $text-color:$white, $font-size:1rem,$font-weight: 400, $padding-sizes: 10px 30px 10px 30px, $timing:1s)
+    @include makeOutlineButton($bg-color: $white, $border-color: $primary-green, $text-color: $primary-green, $font-size: 16px, $font-weight: 500, $padding-sizes: 10px 50px 10px 50px);
+}
+
+.btn--see-resources {
+    //@mixin makeOutlineButton($bg-color:$primary-green, $border-color:$primary-green, $text-color:$white, $font-size:1rem,$font-weight: 400, $padding-sizes: 10px 30px 10px 30px, $timing:1s)
+    @include makeOutlineButton($bg-color: $white, $border-color: $primary-green, $text-color: $primary-green, $font-size: 16px, $font-weight: 500, $padding-sizes: 10px 33px 10px 33px);
+}
+
+.btn-share-icons {
+    width: 62px;
+    @media(max-width: 576px) {
+        width: 70px;
+        margin-left: 1rem;
+    }
+}
+
+.btn--connect-facebook {
+    width: 48px;
+    height: 48px;
+    background-color: $white;
+   
+    -webkit-transition: background-color .25s;
+    -moz-transition: background-color .25s;
+    transition: background-color .25s;
+    border: 2px solid $primary-green;
+    border-radius: 50%;
+    span {
+        font-size: 45px;
+        color: $primary-green;
+        position: relative;
+        left: -.4rem;
+        top: -.2rem;
+        padding: 0;
+        
+        -webkit-transition: color .25s;
+        -moz-transition: color .25s;
+        transition: color .25s;
+       // background-color: red;
+    }
+
+    &:hover {
+        background-color: $primary-green;         
+        -webkit-transition: background-color .25s;
+        -moz-transition: background-color .25s;
+        transition: background-color .25s;
+        span {
+            color: $white;
+            -webkit-transition: color .25s;
+            -moz-transition: color .25s;
+            transition: color .25s;
+        }
+    }
+}
+
+
+
+.btn--connect-youtube {
+    width: 48px;
+    height: 48px;
+    background-color: $white;
+   
+    -webkit-transition: background-color .25s;
+    -moz-transition: background-color .25s;
+    transition: background-color .25s;
+    border: 2px solid $primary-green;
+    border-radius: 50%;
+    span {
+        font-size: 52px;
+        color: $primary-green;
+        position: relative;
+        left: -.6rem;
+        top: -.4rem;
+        padding: 0;
+        
+        -webkit-transition: color .25s;
+        -moz-transition: color .25s;
+        transition: color .25s;
+       // background-color: red;
+    }
+
+    &:hover {
+        background-color: $primary-green;         
+        -webkit-transition: background-color .25s;
+        -moz-transition: background-color .25s;
+        transition: background-color .25s;
+        span {
+            color: $white;
+            -webkit-transition: color .25s;
+            -moz-transition: color .25s;
+            transition: color .25s;
+        }
+    }
+}
+
+
+.btn--connect-share {
+    width: 129px;
+    height: 48px;
+    background-color: $white;
+   
+   
+    -webkit-transition: background-color .25s;
+    -moz-transition: background-color .25s;
+    transition: background-color .25s;
+    border: 2px solid $primary-green;
+    border-radius: 40px;
+   
+
+        .btn--connect-share-txt {
+            font-family: $NOTO_SANS_SC;
+            font-weight: 700;
+            font-size: 16px;
+            color: $primary-green;
+            position: relative;
+            top:-.65rem;
+            left: .5rem;
+            margin-top: -1rem;
+            -webkit-transition: color .25s;
+            -moz-transition: color .25s;
+            transition: color .25s;
+            span {
+                font-size: 37px;
+                color: $primary-green;
+                position: relative;
+                left: -.2rem;
+                top: .6rem;
+                padding-left: .6rem;
+                
+                -webkit-transition: color .25s;
+                -moz-transition: color .25s;
+                transition: color .25s;
+               // background-color: red;
+            }
+        }
+
+ 
+    
+    
+   
+
+    &:hover {
+        background-color: $primary-green;         
+        -webkit-transition: background-color .25s;
+        -moz-transition: background-color .25s;
+        transition: background-color .25s;
+        .btn--connect-share-txt,span {
+            color: $white;
+            -webkit-transition: color .25s;
+            -moz-transition: color .25s;
+            transition: color .25s;
+        }
+    }
+}

@@ -1,0 +1,217 @@
+/*
+===================================================
+ TABLE OF CONTENTS:
+
+1. SHADOWS
+2. GENERAL STYLING
+===================================================
+*/
+
+
+/*
+----------------------------------------------------
+1. SHADOWS
+----------------------------------------------------
+*/
+
+.shadow--dk-0 {
+    $shadow-dk-0--color: rgba(0, 0, 0, 0);
+    $shadow-dk-0--xOffset: 0;
+    $shadow-dk-0-yOffset: 0;
+    $shadow-dk-0-blur: 0;
+    @include boxShadow($shadow-dk-0--color, $shadow-dk-0--xOffset, $shadow-dk-0-yOffset, $shadow-dk-0-blur);
+}
+
+.shadow--dk-1 {
+    $shadow-dk-1--color: rgba(0, 0, 0, .50);
+    $shadow-dk-1--xOffset: 0;
+    $shadow-dk-1-yOffset: 1px;
+    $shadow-dk-1-blur: 4px;
+    @include boxShadow($shadow-dk-1--color, $shadow-dk-1--xOffset, $shadow-dk-1-yOffset, $shadow-dk-1-blur);
+}
+
+.shadow--dk-2 {
+    $shadow-dk-2--color: rgba(0, 0, 0, .50);
+    $shadow-dk-2--xOffset: 0;
+    $shadow-dk-2-yOffset: 2px;
+    $shadow-dk-2-blur: 8px;
+    @include boxShadow($shadow-dk-2--color, $shadow-dk-2--xOffset, $shadow-dk-2-yOffset, $shadow-dk-2-blur);
+}
+
+.shadow--dk-3 {
+    $shadow-dk-3--color: rgba(0, 0, 0, .50);
+    $shadow-dk-3--xOffset: 0;
+    $shadow-dk-3-yOffset: 2px;
+    $shadow-dk-3-blur: 8px;
+    @include boxShadow($shadow-dk-3--color, $shadow-dk-3--xOffset, $shadow-dk-3-yOffset, $shadow-dk-3-blur);
+}
+
+.shadow--dk-4 {
+    $shadow-dk-4--color: rgba(0, 0, 0, .50);
+    $shadow-dk-4--xOffset: 0;
+    $shadow-dk-4-yOffset: 24px;
+    $shadow-dk-4-blur: 24px;
+    @include boxShadow($shadow-dk-4--color, $shadow-dk-4--xOffset, $shadow-dk-4-yOffset, $shadow-dk-4-blur);
+}
+
+.shadow--lt-1 {
+    $shadow-lt-1--color: rgba(0, 0, 0, .20);
+    $shadow-lt-1--xOffset: 0;
+    $shadow-lt-1-yOffset: 1px;
+    $shadow-lt-1-blur: 4px;
+    @include boxShadow($shadow-lt-1--color, $shadow-lt-1--xOffset, $shadow-lt-1-yOffset, $shadow-lt-1-blur);
+}
+
+.shadow--lt-2 {
+    $shadow-lt-2--color: rgba(0, 0, 0, .20);
+    $shadow-lt-2--xOffset: 0;
+    $shadow-lt-2-yOffset: 2px;
+    $shadow-lt-2-blur: 8px;
+    @include boxShadow($shadow-lt-2--color, $shadow-lt-2--xOffset, $shadow-lt-2-yOffset, $shadow-lt-2-blur);
+}
+
+
+.shadow--lt-3 {
+    $shadow-lt-3--color: rgba(0, 0, 0, .20);
+    $shadow-lt-3--xOffset: 0;
+    $shadow-lt-3-yOffset: 0px;
+    $shadow-lt-3-blur: 10px;
+    @include boxShadow($shadow-lt-3--color, $shadow-lt-3--xOffset, $shadow-lt-3-yOffset, $shadow-lt-3-blur);
+}
+
+/*
+----------------------------------------------------
+1. GENERAL STYLES
+----------------------------------------------------
+*/
+
+.no-underline {
+    text-decoration: none!important;
+}
+
+.text-underline {
+    text-decoration: underline!important;
+}
+
+.bold-text {
+    font-weight: 700!important;
+}
+
+.normal-text {
+    font-weight: 400!important;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.cursor--add-pointer {
+    cursor: pointer;
+}
+
+.hide-mobile-image {
+    display: block;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.hide-desktop-image {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+
+.hide--desktop-header {
+    display: block!important;
+    @media screen and (min-width: 1024px) {
+        display: none!important;
+    }
+}
+
+.hide--mobile-header {
+    display: none!important;
+    @media screen and (max-width: 768px) {
+        display: block!important;
+    }
+}
+
+.hide-mobile {
+    display: none!important;
+    @media screen and (min-width: 1024px) {
+        display: block!important;
+    }
+}
+
+.hide-mobile-carousel {
+    display: none!important;
+    @media screen and (max-width: 768px) {
+        display: block!important;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide--desktop-section {
+    display: block!important;
+    @media(max-width: 576px) {
+        display: none!important;
+    }
+}
+
+.hide--mobile-section {
+    display: none;
+    @media(max-width: 576px) {
+        display: block;
+    }
+}
+
+.border-bottom-none {
+    border-bottom: none!important;
+}
+
+.border-top-none {
+    border-top: none!important;
+}
+
+.background-color--none {
+    background-color: none;
+}
+
+.border-radius--six {
+    border-radius: 11px;
+}
+
+.border--section-line-separator {
+    border: 2px solid rgba($black, .15);
+    width: 90%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.container {
+   width: 1110px!important;
+    max-width: 1110px!important;
+    //åpadding: 0 30px!important;
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+}
+
+.container-xl {
+    width: 1110px!important;
+     max-width: 1110px!important;
+     //åpadding: 0 30px!important;
+     padding-left: 30px!important;
+     padding-right: 30px!important;
+ }

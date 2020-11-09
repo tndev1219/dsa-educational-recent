@@ -1,0 +1,160 @@
+// $boxShadow - TO MAKE BOX SHADOWS ON OBJECTS 
+@mixin boxShadow($color, $xOffset, $yOffset, $blur) {
+    box-shadow: $xOffset $yOffset $blur $color;
+}
+
+@mixin borderAllSides($color, $width) {
+    border: solid $width $color;
+}
+
+@mixin borderTop ($color, $width) {
+    border-top: solid $width $color;
+}
+
+@mixin borderRight ($color, $width) {
+    border-right: solid $width $color;
+}
+
+@mixin borderBottom ($color, $width) {
+    border-bottom: solid $width $color;
+}
+
+@mixin borderLeft ($color, $width) {
+    border-left: solid $width $color;
+}
+
+@mixin borderLeftRight ($color, $width) {
+    border-left: solid $width $color;
+    border-right: solid $width $color;
+}
+
+@mixin borderTopBottom ($color, $width) {
+    border-top: solid $width $color;
+    border-bottom: solid $width $color;
+}
+
+@mixin headers ($font-family, $font-size, $color, $line-height, $padding, $margin) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin fluid-type($font-min, $font-max, $screen-min, $screen-max) {
+    font-size: #{$font-min}px;
+    @media only screen and (min-width: #{$screen-min}px) {
+        font-size: calc( #{$font-min}px + #{($font-max - $font-min)} * (100vw - #{$screen-min}px) / (#{$screen-max} - #{$screen-min}));
+    }
+    @media only screen and (min-width: #{$screen-max}px) {
+        font-size: #{$font-max}px;
+    }
+}
+
+// RETINA IMAGES 
+@mixin retina($image, $width, $height) {
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        /* Serving 2x image on Retina display */
+        background-image: url($image);
+        background-size: $width $height;
+    }
+}
+
+//KEYFRAMES 
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+// GRADIENTS
+@mixin gradientTwoColors($degrees, $color1, $percent1, $color2, $percent2) {
+    background: linear-gradient($degrees, $color1 $percent1, $color2 $percent2);
+}
+
+@mixin gradientThreeColors($degrees, $color1, $color2, $color3) {
+    background: linear-gradient($degrees, $color1, $color2, $color3);
+}
+
+//BUTTONS 
+@mixin makeSolidButton($bg-color:$primary-green, $hover-color:$white, $font-size:1rem, $text-color:$primary-green, $padding-sizes: 10px 30px 10px 30px, $timing:1s) {
+    background-color: $bg-color;
+    -webkit-transition: background-color $timing;
+    -moz-transition: background-color $timing;
+    transition: background-color $timing;
+    padding: $padding-sizes;
+    display: inline-block;
+    border: none;
+    font-family: $NOTO_SANS_SC;
+    font-weight: 700;
+    color: $text-color;
+    text-align: center;
+    p {
+        font-family: $NOTO_SANS_SC;
+        font-weight: 700;
+        color: $text-color;
+        text-align: center;
+        margin: 2px;
+    }
+    &:hover {
+        background-color: $hover-color;
+        text-decoration: none;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+@mixin makeOutlineButton($bg-color:$primary-green, $border-color:$primary-green, $text-color:$white, $font-size:1rem, $font-weight:500, $padding-sizes: 10px 30px 10px 30px, $timing:1s) {
+    background-color: $bg-color;
+    padding: $padding-sizes;
+    border: 2px solid $border-color;
+    border-radius: 30px;
+    display: inline-block;
+    -webkit-transition: background-color $timing, color $timing;
+    -moz-transition: background-color $timing, color $timing;
+    transition: background-color $timing, color $timing;
+    font-family: $NOTO_SANS_SC;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    text-align: center;
+    color: $text-color;
+    p {
+        font-family: $NOTO_SANS_SC;
+        ;
+        font-size: $font-size;
+        text-align: center;
+        color: $text-color;
+        margin: 2px;
+    }
+    span {
+        color: $text-color;
+    }
+    &:hover {
+        background-color: $text-color;
+        color: $bg-color;
+        text-decoration: none;
+        p {
+            -webkit-transition: color $timing;
+            -moz-transition: color $timing;
+            transition: color $timing;
+            color: $bg-color;
+        }
+        span {
+            -webkit-transition: color $timing;
+            -moz-transition: color $timing;
+            transition: color $timing;
+            color: $bg-color;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+}
